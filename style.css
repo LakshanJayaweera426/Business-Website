@@ -91,7 +91,7 @@
     margin-bottom: 20px;
 }
 
-/*----- Servieces -----*/
+/*---------------------------- Servieces --------------------------------*/
 #services{
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(img/services.jpg);
     background-size: cover;
@@ -114,22 +114,14 @@
     display: block;
     height: 3px;
     width: 170px;
-    margin: 20px auto 5px;
+    margin: 20px auto 20px;
 }
 .services
 {
     margin-top: 40px;
 }
-.icon
-{
-    font-size: 40px;
-    margin: 20px auto;
-    padding: 20px;
-    height: 80px;
-    width: 80px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-}
+
+
 #services p
 {
     font-size:14px;
@@ -142,7 +134,12 @@
     cursor: pointer;
     transition: 0.7s;
 }
-/*------ Team Members -----*/
+.services-img{
+    width: 60px;
+    height: auto;
+    
+}
+/*--------------------------------------------- Team Members -------------------------------*/
 #team
 {
     padding-top: 50px;
@@ -243,7 +240,7 @@ h1::after
     font-size: 38px;
 }
 
-/*-------Price Plans---------*/
+/*---------------------------------------Price Plans---------------------------------*/
 #price
 {
     padding: 40px 0;
@@ -400,22 +397,27 @@ a{
 }
 
 
+/*---------Get In Touch------*/
+#contact
+{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color:#777;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.contact-form{
+    padding: 15px;
+}
+.form-control{
+    border-radius: 0!important;
+    border: none!important;
+    margin-bottom: 15px;
+}
+::placeholder
+{
+    color: #999!important;
+}
 .profile h3{
     font-size: 20px;
     margin-top: 15px;
@@ -436,4 +438,22 @@ blockquote{
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
     cursor: pointer;
     transition: 0.5s;
+}
+.follow
+{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+.contact-info .fa
+{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+.follow img
+{
+    width: 30px;
+    height: auto;
+    padding-right: 10px;
 }
