@@ -339,3 +339,101 @@ a{
     text-decoration: none!important;
     color: #fff!important;
 }
+/*-----Testimonials---------*/
+
+#testimonials
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#testimonials .row
+{
+    margin-top: 20px;
+}
+.col-md-4
+{
+    margin: 40px auto;
+}
+.profile
+{
+    padding: 30px 20px 10px;
+    background-color: #efefef;
+}
+.user1
+{
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+.user1 img{
+    top:3330px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+}
+
+.user2
+{
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+.user2 img{
+    top:3000px;
+    position: fixed;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+    
+}
+.user3
+{
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+.user3 img{
+    top:3000px;
+    position: fixed;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+}
+#testimonials span
+{
+    font-size: 12px;
+    color: #333;
+}
+blockquote{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.profile:hover
+{
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
