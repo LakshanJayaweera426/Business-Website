@@ -3,13 +3,24 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+.dark-theme{
+    --primary-color:#212121;
+    --secondary-color:#edf2fc;
+}
 
 /*----- Navigation bar -----------*/
 #nav-bar{
     position: sticky;
     top :0;
     z-index: 10;
+    background: var(--primary-color);
+    
 }
+
 .navbar-brand img{
     height: 40px;
     padding-left: 30px;
@@ -23,21 +34,29 @@
     text-align: left;
 }
 #nav-bar ul li a:hover{
-    color: #007bff!important;
+    color: #0677f0!important;
 }
-.navbar
-{
-    background: #fff;
-}
+
 .navbar-toggler
 {
     border: none!important;
 }
 .nav-link
 {
-    color:#555!important;
+    color: var(--secondary-color)!important;
     font-weight: 600;
     font-size: 16px;
+}
+#icon
+{
+    width: 20px;
+    height: auto;
+    margin-left: 250px;
+    cursor: pointer;
+}
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
 }
 
 /*------- Slider --------*/
@@ -65,7 +84,20 @@
     padding-top: 50px;
     padding-bottom: 50px;
     color: #555;
+    background: var(--primary-color);
 
+}
+#about a
+{
+    background: var(--secondary-color);
+}
+.col-md-6
+{
+    color: var(--secondary-color);
+}
+.col-md-6 a
+{
+    color: var(--primary-color);
 }
 #about .btn
 {
@@ -145,10 +177,11 @@
     padding-top: 50px;
     padding-bottom: 50px;
     color: #555;
+    background: var(--primary-color);
 }
 h1{
     text-align: center;
-    color: #555 !important;
+    color: var(--secondary-color) !important;
     padding-bottom: 10px;
 }
 h1::after
@@ -195,7 +228,12 @@ h1::after
     font-size: 15px;
     font-weight: bold;
     margin-top: 15px;
+    color: var(--secondary-color);
 }
+.profile-pic p{
+    color: var(--secondary-color);
+}
+
 #team .fa{
     height: 25px;
     width: 25px;
@@ -226,7 +264,7 @@ h1::after
     transition: 0.5s;
 }
 
-/*----- promo ---------*/
+/*---------------------- promo -----------------------------*/
 #promo
 {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/promo.jpg);
@@ -244,19 +282,21 @@ h1::after
 #price
 {
     padding: 40px 0;
-    background: #efefef;
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
+
 .single-price
 {
     margin: 10px auto;
     display: inline;
     float: left;
     width: 100%;
-    background-color: #fff;
+    background: var(--primary-color);
     transition: 0.5s;
 }
 .single-price:hover{
-    box-shadow: 0 2px 20px #333;
+    box-shadow: 0 2px 20px #0ceb5a;
 }
 .price-head
 {
@@ -336,13 +376,24 @@ a{
     text-decoration: none!important;
     color: #fff!important;
 }
-/*-----Testimonials---------*/
+/*-----------------------------Testimonials--------------------------------------*/
 
 #testimonials
 {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(img/services.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    background-attachment: fixed;
     padding-top: 50px;
     padding-bottom: 50px;
+    
 }
+#testimonials h1{
+    color: #efefef!important;
+}
+
+
 #testimonials .row
 {
     margin-top: 20px;
@@ -354,11 +405,17 @@ a{
 .profile
 {
     padding: 30px 20px 10px;
-    background-color: #efefef;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+
+}
+.user-title{
+    color: var(--secondary-color);
+    font-size: 13px;
 }
 .user1
 {
-    width: 120px;
+    width: 135px;
     height: auto;
     border-radius: 50%;
 }
@@ -400,17 +457,20 @@ a{
 /*---------Get In Touch------*/
 #contact
 {
-    background: #efefef;
+    background: var(--primary-color);
     padding-top: 40px;
     padding-bottom: 40px;
-    color:#777;
+    color: var(--secondary-color);
 
 }
 .contact-form{
     padding: 15px;
+    
+    
+
 }
 .form-control{
-    border-radius: 0!important;
+    border-radius: 10px!important;
     border: none!important;
     margin-bottom: 15px;
 }
@@ -441,7 +501,7 @@ blockquote{
 }
 .follow
 {
-    background: #fff;
+    background: var(--primary-color);
     padding: 10px;
     margin: 15px;
 }
@@ -457,6 +517,8 @@ blockquote{
     height: auto;
     padding-right: 10px;
 }
+
+
 /*-----------Footer----------------*/
 #footer
 {
