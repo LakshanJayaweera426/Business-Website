@@ -457,3 +457,12 @@ blockquote{
     height: auto;
     padding-right: 10px;
 }
+/*-----------Footer----------------*/
+#footer
+{
+    background: #333;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    text-align: center;
+}
